@@ -1,12 +1,51 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\chalv\\Documents\\GitHub\\gb-port\\Solution1\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{00A58095-4827-4FC7-B4DC-B419DFAAEDF6}|Solution Items{00A58095-4827-4FC7-B4DC-B419DFAAEDF6}|C:\\Users\\chalv\\Documents\\GitHub\\gb-port\\index-UI.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00A58095-4827-4FC7-B4DC-B419DFAAEDF6}|Solution Items{00A58095-4827-4FC7-B4DC-B419DFAAEDF6}|C:\\Users\\chalv\\Documents\\GitHub\\gb-port\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "index-UI.html",
+              "DocumentMoniker": "C:\\Users\\chalv\\Documents\\GitHub\\gb-port\\index-UI.html",
+              "RelativeDocumentMoniker": "..\\index-UI.html",
+              "ToolTip": "C:\\Users\\chalv\\Documents\\GitHub\\gb-port\\index-UI.html",
+              "RelativeToolTip": "..\\index-UI.html",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADMAAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-06-13T07:44:02.242Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "index.html",
+              "DocumentMoniker": "C:\\Users\\chalv\\Documents\\GitHub\\gb-port\\index.html",
+              "RelativeDocumentMoniker": "..\\index.html",
+              "ToolTip": "C:\\Users\\chalv\\Documents\\GitHub\\gb-port\\index.html",
+              "RelativeToolTip": "..\\index.html",
+              "ViewState": "AQIAAF8AAAAAAAAAAAAAAGsAAABNAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-06-13T07:42:52.118Z"
+            }
+          ]
+        }
+      ]
     }
   ]
 }
