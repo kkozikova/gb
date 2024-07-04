@@ -1,19 +1,3 @@
-<!-- 
-  Hello 😊.
-
-  This template is designed and developed by Nisar Hassan Naqvi
-  for anyone to use for free or customize the way they like.
-
-  Github Repo: https://github.com/nisarhassan12/portfolio-template/
-  My Website: https://nisar.dev
-
-  For business & inquires, contact me => syednisarhassan12@gmail.com
--->
-
-<!--
-  Follow the instructions written in comments to create your stunning portfolio
--->
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -24,11 +8,10 @@
 
   <!-- Put your site title here -->
   <title>
-    Karolina Kozikova |Game Dev based in Helsinki, Finland.
+    Karolina Kozikova Portfolio
   </title>
 
   <meta name="description" content="Add small description of yourslef.">
-  <!-- Add some coding keywords below, Ex: (React, CSS etc) -->
   <meta name="keywords" content="Put your name, skills and some coding keywords" />
   <link rel="stylesheet" href="index.css" />
 </head>
@@ -41,74 +24,364 @@
     <div class="row">
       <nav class="nav" role="navigation">
           <ul class="nav__items">
+              <li class="nav__item"><a href="#work" class="nav__link">UI/UX</a></li>
 
-              <li class="nav__item"><a href='index-games.html' class="nav__link">GAMES</a></li>
-              <li class="nav__item"><a href='index-ui.html' class="nav__link">UI/UX</a></li>
-              <li class="nav__item"><a href='index-3d.html' class="nav__link">3D</a></li>
-              <li class="nav__item"><a href='index-about.html' class="nav__link">ABOUTt</a></li>
+              <li class="nav__item"><a href='index -games.html' class="nav__link">GAMES</a></li>
+              <!--<li class="nav__item"><a href='index-ui.html' class="nav__link">Click me</a></li>-->
+              <!--<li class="nav__item"><a href="#clients" class="nav__link">Clients</a></li>
+    <li class="nav__item"><a href="#about" class="nav__link">About</a></li>-->
+              <li class="nav__item">
+                  <a href="#contact" class="nav__link">CONTACT</a>
+              </li>
           </ul>
       </nav>
     </div>
+
     <div class="header__text-box row">
         <div class="header__text">
-            <h1 class="heading-primary">
-                <!-- Replace the following name with your name -->
-                <span>Karolina Kozikova</span>
-            </h1>
-            <!-- Put a small paragraph about yourself -->
-            <h4>Game Dev based in Helsinki, Finland.</h4>
-            <p>
-                Specializes in UX with a background in general art and contemporary art. Focuses on effectively conveying specific solutions to the audience
-            </p>
+            <!--<h1 class="heading-primary">
+            <span>KAROLINA</span>
+            <span>KOZIKOVA</span>
 
+        </h1>-->
+            <img src="./images/title.svg" alt="Company 2" />
+            <p>I enjoy creating systems that effectively convey a given idea to the users.<br> Warm welcome to my website! </p>
+
+          
+            <!--<a href="#contact" class="btn btn--pink">Get in touch</a>-->
         </div>
-       
+        <img src="./images/bannerleaves.png" id="bl2" class="blob" alt="Company 2" />
+
+
     </div>
   </header>
 
   <main role="main">
 
-    <!-- ***** Work ***** -->  
- 
+      <!-- ***** PROJECTS START ***** -->
 
-  <!-- ***** Footer ***** -->
- 
-  <!--<footer role="contentinfo" class="footer">
-    <div class="row">-->
+      <section class="about" id="w">
+          <div class="row">
+              <!--<h2>UI/UX PORTFOLIO</h2>-->
+              <div class="banner-trees">
+                  <h3>THUS SANG THE TREES</h3>
+
+                  <h4>UX/UX || Tutorialisation ||Level Design</h4>
+
+
+              </div>
+
+              <div class="about__content">
+                  <div class="about__text">
+                      <p>
+                          A mix of gardening sim and horror highlighting the importance of <span class="stylish">cooperation with nature.</span> Project of multiple masters students where I acted as a <span class="stylish">vision holder and team leader</span>.
+                      </p>
+                      <a href="#" class="btn">itch.io</a>
+                  </div>
+
+                  <div class="about__photo-container">
+                      <iframe title="vimeo-player" src="https://player.vimeo.com/video/954759536?h=1a8f432698" width="640" height="360" frameborder="0" allowfullscreen></iframe>
+                  </div>
+
+              </div>
+              <div class="about__content">
+
+                  <!-- *****CAROUSEL #***** -->
+
+                  <div class="carousel" data-carousel>
+                      <div class="carousel-inner">
+                          <div class="carousel-item active">
+                              <img src="./images/corners.png" alt="Image 1">
+                          </div>
+                          <div class="carousel-item active">
+                              <img src="./images/sun.png" alt="Image 1">
+                          </div>
+                          <div class="carousel-item active">
+                              <img src="./images/item selection(2).jpg" alt="Image 1">
+                          </div>
+                          <div class="carousel-item active">
+                              <img src="./images/items.png" alt="Image 1">
+                          </div>
+                          <div class="carousel-item">
+                              <img src="./images/health.png" alt="Image 2">
+                          </div>
+                          <div class="carousel-item">
+                              <img src="./images/focus.png" alt="Image 3">
+                          </div>
+                      </div>
+                      <button class="carousel-control prev" data-carousel-button="prev" ">❮</button>
+                      <button class="carousel-control next" data-carousel-button="next">❯</button>
+                  </div>
+
+                  <!-- ***** SECOND BLURB #***** -->
+
+
+                  <div class="about__text">
+                      <h4>CHALLENGES</h4>
+
+                      <p>
+                          The <span class="stylish">unusual gameplay</span> promoting cooperative themes with a non human agent required a lot of iteration on the way of tutorialisation. The end product combines subtle cues in the level design with pop ups to optimize the learning curve.
+</p>
+
+                  </div>
+              </div>
+
+
+              <!-- ***** GIF SHOWCASE #***** -->
+
+              <div class="about__text">
+                  <div class="show-gifs">
+                      <img src="./images/journal.gif" class="client__logo" alt="Company 2" />
+                      <img src="./images/UI-transititons.gif" class="client__logo" alt="Company 2" />
+
+                  </div>
+                  <!-- ***** img ***** -->
+                  <div class="show-gifs">
+                      <img src="./images/UI-talkign.gif" class="client__logo" alt="Company 2" />
+                      <img src="./images/health big.gif" class="client__logo" alt="Company 2" />
+                  </div>
+
+              </div>
+          </div>
+      </section>
+
+
+      <!-- ***** ireverse ***** -->
+      <section class="about" id="about">
+          <div class="row">
+              <!--<div class="work__text">-->
+
+              <div class="banner-ire">
+                  <h3>IRREVERSE</h3>
+
+                  <h4>|| Solo Endeavour ||</h4>
+
+              </div>
+
+
+              <div class="about__content">
+                  <div class="about__text">
+                      <p>
+                          Situated in a world of vaporvawe and internet aesthetics a passerby  <span class="stylish">finds their way around with the help of plants.</span>
+                      </p>
+
+                  </div>
+
+                  <!--<div class="about__photo-container">
+                      <iframe title="vimeo-player" src="https://player.vimeo.com/video/954759536?h=1a8f432698" width="640" height="360" frameborder="0" allowfullscreen></iframe>
+                  </div>-->
+
+                  <div class="about__photo-container">
+                      <iframe src="https://player.vimeo.com/video/960297489?h=03b46e92f6" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+
+                  </div>
+
+              </div>
+              <div class="about__content">
+
+                  <!-- *****CAROUSEL #***** -->
+
+                  <div class="carousel" data-carousel>
+                      <div class="carousel-inner">
+                          <div class="carousel-item active">
+                              <img src="./images/MENU1.png" alt="Image 1">
+                          </div>
+                          <div class="carousel-item">
+                              <img src="./images/IRE-UI.png" alt="Image 2">
+                          </div>
+                          <div class="carousel-item">
+                              <img src="./images/cat-news.png" alt="Image 3">
+                          </div>
+                      </div>
+                      <button class="carousel-control prev" data-carousel-button="prev" ">❮</button>
+                      <button class="carousel-control next" data-carousel-button="next">❯</button>
+                  </div>
+
+                  <!-- ***** SECOND BLURB #***** -->
+
+
+                  <div class="about__text">
+                      <h4>CHALLENGES</h4>
+
+                      <p>
+                          The project was  <span class="stylish">situated in a gallery space </span>and not a standard platform. The controls were to be as simple as possible, just like the learning curve. The internet aesthics allow much freedom in designing the UI.
+
+                      </p>
+
+                  </div>
+
+
+
+
+
+              </div>
+
+              <div class="about__text">
+                  <div class="show-gifs">
+                      <img src="./images/Ire gif 1.gif" class="client__logo" alt="Company 2" />
+                      <img src="./images/ire-walk.gif" class="client__logo" alt="Company 2" />
+
+                  </div>
+                  <!-- ***** img ***** -->
+                  <div class="show-gifs">
+                      <img src="./images/cat talk gif.gif" class="client__logo" alt="Company 2" />
+                      <img src="./images/interview gif.gif" class="client__logo" alt="Company 2" />
+                  </div>
+
+              </div>
+
+
+          </div>
+          </div>
+      </section>
+      <section class="about" id="about">
+          <div class="row">
+              <!--<div class="work__text">-->
+
+              <div class="banner-other">
+                  <h3>SITES</h3>
+
+                  <h4> Programming || Content || Design </h4>
+
+              </div>
+
+
+              <div class="about__content">
+                
+
+
+              </div>
+              <div class="about__content">
+
+                  <!-- *****CAROUSEL #***** -->
+
+                  <div class="carousel" data-carousel>
+                      <div class="carousel-inner">
+                          <div class="carousel-item active">
+                              <img src="./images/Untitled_1.13.2.png" alt="Image 1">
+                          </div>
+                          <div class="carousel-item">
+                              <img src="./images/Untitled_1.11.1.png" alt="Image 2">
+                          </div>
+                          <div class="carousel-item">
+                              <img src="./images/Untitled_1.8.1.png" alt="Image 3">
+                          </div>
+                      </div>
+                      <button class="carousel-control prev" data-carousel-button="prev" ">❮</button>
+                      <button class="carousel-control next" data-carousel-button="next">❯</button>
+                  </div>
+
+                  <!-- ***** SECOND BLURB #***** -->
+
+
+                  <div class="about__text">
+                      <h4>Websites i have created for commercial and portfolio purposes</h4>
+
+                      <p>
+                          All of these are created in WIX internal editor, utilizing  <span class="stylish">both pre-made elements and custom scripted features.</span> These sites are optimized for both PC and mobile browsers.
+                      </p>
+
+                  </div>
+
+
+
+
+
+              </div>
+
+              <div class="about__text">
+                  <div class="show-gifs">
+                      <img src="./images/SITE1(1).gif" class="client__logo" alt="Company 2" />
+                      <img src="./images/SITE2.gif" class="client__logo" alt="Company 2" />
+
+                  </div>
+                  <!-- ***** img ***** -->
+                  <div class="show-gifs">
+                      <img src="./images/SITE1(2).gif" class="client__logo" alt="Company 2" />
+                      <img src="./images/SITE2(1).gif" class="client__logo" alt="Company 2" />
+                  </div>
+
+              </div>
+
+
+          </div>
+          </div>
+      </section>
+
+
+      <section class="about" id="contact">
+          <div class="row">
+              <h2>About Me</h2>
+              <div class="about__content">
+                  <div class="about__text">
+                      <!-- Replace the below paragraph with info about yourself -->
+                      <p>
+                          Hello! Thank you for visiting my website! 😊
+                      </p>
+                      <p>
+                          I am a general artist and designer with  <span class="stylish">background in tech and contemporary art,</span> always striving to learn new things. I adore travelling, history and in my spare time i switch between sports and gardening.
+                      </p>
+                      <p>
+                         If you have any questions or just wish to say "Hi", the best way to reach me is via email:
+                      </p>
+                      <!-- Provide a link to your resume -->
+                      <!--<a href="#" class="btn">My Resume</a>-->
+
+                      <a href="mailto:chalvost@gmail.com" class="btn">chalvost@gmail.com</a>
+                  </div>
+
+                  <div class="about__photo-container">
+                      <!-- Add a nice photo of yourself -->
+                      <img class="about__photo" src="./images/photo_2023-01-03_14-25-26.jpg" alt="" />
+                  </div>
+              </div>
+          </div>
+      </section>
+  </main>
+
+   <!-- ***** Footer ***** -->
+
+  <footer role="contentinfo" class="footer">
+    <div class="row">
       <!-- Update the links to point to your accounts -->
-      <!--<ul class="footer__social-links">
-        <li class="footer__social-link-item">
-          <a href="https://twitter.com/nisarhassan12/" title="Link to Twitter Profile">
-            <img src="./images/twitter.svg" class="footer__social-image" alt="Twitter">
-          </a>
-        </li>
-        <li class="footer__social-link-item">
-          <a href="https://github.com/nisarhassan12/" title="Link to Github Profile">
-            <img src="./images/github.svg" class="footer__social-image" alt="Github">
-          </a>
-        </li>
-        <li class="footer__social-link-item">
-          <a href="https://codepen.io/nisar_hassan" title="Link to Codepen Profile">
-            <img src="./images/codepen.svg" class="footer__social-image" alt="Codepen">
-          </a>
-        </li>
-        <li class="footer__social-link-item">
-          <a href=https://www.linkedin.com/in/nisar-hassan-naqvi-413466199/">
-            <img src="./images/linkedin.svg" title="Link to Linkedin Profile" class="footer__social-image" alt="Linkedin">
-          </a>
-        </li>
-      </ul>--> 
+        <ul class="footer__social-links">
+            <!--<li class="footer__social-link-item">
+      <a href="https://www.behance.net/chalvost/projects" title="Link to Twitter Profile">
+        <img src="./images/twitter.svg" class="footer__social-image" alt="Twitter">
+      </a>
+    </li>
+    <li class="footer__social-link-item">
+      <a href="https://www.artstation.com/coschor" title="Link to Github Profile">
+        <img src="./images/github.svg" class="footer__social-image" alt="Github">
+      </a>
+    </li>
+    <li class="footer__social-link-item">
+      <a href="https://v4v3.itch.io/" title="Link to Codepen Profile">
+        <img src="./images/codepen.svg" class="footer__social-image" alt="Codepen">
+      </a>
+    </li>-->
+            <li class="footer__social-link-item">
+                <a href=https://www.linkedin.com/in/karol%C3%ADna-ko%C5%BE%C3%ADkov%C3%A1-18467b169/">
+                    <img src="./images/linkedin.svg" title="Link to Linkedin Profile" class="footer__social-image" alt="Linkedin">
+                </a>
+            </li>
+            <li class="footer__social-link-item">
+                <a href=https://www.artstation.com/coschor">
+                    <img src="./images/artstation.png" title="Link to Linkedin Profile" class="footer__social-image" alt="Linkedin">
+                </a>
+            </li>
+            <li class="footer__social-link-item">
+                <a href=https://www.behance.net/chalvost">
+                    <img src="./images/behance.png" title="Link to Linkedin Profile" class="footer__social-image" alt="Linkedin">
+                </a>
+            </li>
+        </ul>
 
       <!-- If you give me some credit by keeping the below paragraph, will be huge for me 😊 Thanks. -->
-      <p>
+      <!--<p>
         &copy; 2020 - Template designed & developed by <a href="https://nisar.dev" class="link">Nisar</a>.
-      </p>
-      <!--<div class="footer__github-buttons">
-        <iframe
-          src="https://ghbtns.com/github-btn.html?user=nisarhassan12&repo=portfolio-template&type=watch&count=true"
-          frameborder="0" scrolling="0" width="170" height="20" title="Watch Portfolio Template on GitHub">
-        </iframe>
-      </div>-->
+      </p>-->
+     
     </div>
   </footer>
 
