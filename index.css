@@ -848,6 +848,11 @@ h2 {
             flex-direction: column-reverse;
             align-items: initial;
         }
+        .about__photo-container iframe {
+            flex: 1;
+            width:31em;
+            margin: 0 var(--gutter-normal) 0 0;
+        }
 
 
     }
@@ -865,6 +870,10 @@ h2 {
         }
 
         .about__photo-container {
+            flex: 1;
+            margin: 0 var(--gutter-huge) 0 0;
+        }
+        .about__photo-container iframe {
             flex: 1;
             margin: 0 var(--gutter-huge) 0 0;
         }
