@@ -1038,7 +1038,7 @@ hr {
     height: 2px; /* Thickness of the line */
     background-color: white; /* Color of the line */
     margin: 10px 0; /* Space around the line */
-    width:200%;
+    width:110%;
 }
 
 @media(max-width: 540px) {
