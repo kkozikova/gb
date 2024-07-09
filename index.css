@@ -866,6 +866,7 @@ h2 {
         .about__photo-container iframe {
             flex: 1;
             width:31em;
+            margin-left:2em;
             margin: 0 var(--gutter-normal) 0 0;
         }
 
@@ -876,6 +877,7 @@ h2 {
         margin-bottom: var(--gutter-normal);
         display:block;
     }
+
 
     @media(min-width: 901px) {
         .about__text {
@@ -888,10 +890,13 @@ h2 {
             flex: 1;
             margin: 0 var(--gutter-huge) 0 0;
         }
-        .about__photo-container iframe {
-            flex: 1;
-            margin: 0 var(--gutter-huge) 0 0;
-        }
+            .about__photo-container iframe {
+                flex: 1;
+                width: 45em;
+                margin: 0 var(--gutter-huge) 0 0;
+                padding-left: 10.1em;
+                margin-right:1em;
+            }
     }
 
     /* --------------------------------------- */
@@ -1031,6 +1036,10 @@ h2 {
     top: 1em;
     margin-bottom: 1em;
     letter-spacing: 0.1em;
+}
+
+.righttext{
+    padding-right:2em;
 }
 
 hr {
