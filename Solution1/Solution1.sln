@@ -6,6 +6,7 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{00A58095-4827-4FC7-B4DC-B419DFAAEDF6}"
 	ProjectSection(SolutionItems) = preProject
 		..\index - template.html = ..\index - template.html
+		..\index -games - Copy.html = ..\index -games - Copy.html
 		..\index -games.html = ..\index -games.html
 		..\index-3d.html = ..\index-3d.html
 		..\index-about.html = ..\index-about.html

@@ -2,6 +2,17 @@
   Have focus outline only for keyboard users 
  ---------------------------------------- */
 
+
+document.addEventListener('DOMContentLoaded', function () {
+    // Select all elements with the class 'fade-in'
+    var fadeElements = document.querySelectorAll('.fade-in');
+
+    // Add the 'show' class to each element to trigger the CSS transition
+    fadeElements.forEach(function (element) {
+        element.classList.add('show');
+    });
+});
+
 const handleFirstTab = (e) => {
   if(e.key === 'Tab') {
     document.body.classList.add('user-is-tabbing')
