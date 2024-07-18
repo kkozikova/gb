@@ -101,9 +101,9 @@ body {
     }
 }
 
-.banner-trees {
-    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.4)), url('./images/statue - Copy.png');
-    height: 50vh;
+.banner-dark {
+    
+    height: 100vh;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -113,9 +113,25 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
-    color: white; /* Assuming white text for better visibility on dark background */
+    color: white;
+    width: 100%;
+}
 
-    width: 100%; /* Ensure full width */
+.banner-trees {
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.4)), url('./images/statue - Copy.png');
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-size: var(--font-size-normal);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white; 
+
+    width: 100%; 
 }
 
 
@@ -123,7 +139,7 @@ body {
 
 .banner-ire {
     background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.4)), url('./images/banner-ireverse.png');
-    height: 50vh;
+    height: 100vh;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -142,7 +158,7 @@ body {
 
 .banner-other {
     background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.4)), url('./images/background.png');
-    height: 50vh;
+    height: 100vh;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -464,9 +480,25 @@ body:not(.user-is-tabbing) a:focus {
     list-style: none;
     background-color: black;
     border-radius: 9px;
-    padding-left:1em;
-    padding-right:1em;
+    padding-left: 1em;
+    padding-right: 1em;
 }
+
+.nav__items-games {
+    display: flex;
+    list-style: none;
+    background-color: black;
+    border-radius: 9px;
+    padding-left: 1em;
+    padding-right: 1em;
+    margin-top: 3em;
+    margin-right: 1.2em;
+    font-family: RozhaOne-Regular;
+    font-size: 1.2em;
+    flex-direction: column; /* Stack items vertically */
+}
+
+
 
 .nav__item:not(:last-child) {
     margin-right: var(--gutter-medium);
@@ -475,6 +507,11 @@ body:not(.user-is-tabbing) a:focus {
 @media(max-width: 500px) {
     .nav {
         justify-content: center;
+    }
+
+    .nav__items-games {
+        margin-top: 13em;
+        z-index: 8
     }
 }
 
@@ -500,6 +537,13 @@ body:not(.user-is-tabbing) a:focus {
     font-family: 'KaiseiOpti-Regular';
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
+
+.nav__link-games {
+    display: flex;
+    list-style: none;
+    flex-direction: column;
+}
+
 
     .nav__link::after {
         content: '';
@@ -1052,22 +1096,50 @@ hr {
     width:110%;
 }
 
-@media(max-width: 540px) {
+
+@media(max-width: 940px) {
+    
+    
     .black-square {
+        width: 28%;
+    }
+
+    .title {
+        width: 50%;
+        left: 2em;
+    }
+
+    .black-square_text {
+        position: relative;
+        left: 5em;
+    }
+
+    hr {
+        width: 110%;
+    }
+}
+
+@media(max-width: 540px) {
+  
+    
+    .black-square {
+        margin-top:-1.7em;
         width:68%;
     }
     .title {
         width: 50%;
         left: 2em;
+        text-align:center;
     }
     .black-square_text {
         position: relative;
         left: 5em;
-       
+        text-align: center;
     }
 
     hr {
         width: 110%;
+        justify-content:center;
     }
 
 }
