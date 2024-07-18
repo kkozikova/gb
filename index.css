@@ -900,6 +900,20 @@ h2 {
         display: flex;
         flex-direction: row-reverse;
         align-items: center;
+        
+    }
+    @media (min-width:900px){
+        .about__content {
+           
+            height: 100vh;
+        }
+    }
+    @media(max-width: 500px){
+
+        .about__content {
+           
+        }
+
     }
 
     @media(max-width: 900px) {
@@ -1134,7 +1148,6 @@ hr {
     .black-square_text {
         position: relative;
         left: 5em;
-        text-align: center;
     }
 
     hr {
