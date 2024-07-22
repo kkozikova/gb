@@ -476,7 +476,7 @@ body:not(.user-is-tabbing) a:focus {
 .nav__items {
     display: flex;
     list-style: none;
-    background-color: black;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
     border-radius: 9px;
     padding-left: 1em;
     padding-right: 1em;
@@ -486,7 +486,7 @@ body:not(.user-is-tabbing) a:focus {
     display: flex;
     font-family: "RozhaOne-Regular";
     list-style: none;
-    background-color: black;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
     border-radius: 9px;
     padding-left: 1em;
     padding-right: 1em;
@@ -549,7 +549,7 @@ body:not(.user-is-tabbing) a:focus {
     text-decoration: none;
     color: inherit;
     transition: all .2s;
-    font-family: 'KaiseiOpti-Regular';
+    font-family: 'Baskerville Old Face';
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
 
@@ -596,6 +596,7 @@ body:not(.user-is-tabbing) a:focus {
     z-index: 1; /* Lower z-index */
 }
 
+
 #top-banner {
     background: linear-gradient(rgba(0,0,0, .1), rgba(0,0,0, .4)), url('./images/Untitled.gif');
     height: 100vh;
@@ -605,6 +606,7 @@ body:not(.user-is-tabbing) a:focus {
     font-size: var(--font-size-normal);
     z-index: 1; /* Lower z-index */
 }
+
 
 
 
@@ -1125,7 +1127,7 @@ h2 {
 
 
 .black-square {
-    background-color: black;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
     border-radius: 9px;
 }
 
