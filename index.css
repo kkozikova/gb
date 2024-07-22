@@ -241,7 +241,6 @@ h1,
 h2,
 h3 
 h4{
-    font-family: KaiseiOpti-Regular;
     font-weight: 400;
     line-height: var(--line-height-small);
     color: var(--white);
@@ -422,7 +421,6 @@ body:not(.user-is-tabbing) a:focus {
 
 
 .title {
-    font-family: KaiseiOpti-Regular;
     position: relative;
     display: inline-block;
     padding: 1rem 0;
@@ -486,6 +484,7 @@ body:not(.user-is-tabbing) a:focus {
 
 .nav__items-games {
     display: flex;
+    font-family: "RozhaOne-Regular";
     list-style: none;
     background-color: black;
     border-radius: 9px;
@@ -513,12 +512,28 @@ body:not(.user-is-tabbing) a:focus {
         margin-top: 13em;
         z-index: 8
     }
+
+    p {
+        margin-left: 2em;
+        margin-right: 2em;
+    }
+    ul {
+        margin-left: 2em;
+        margin-right: 2em;
+    }
+    .about__text h3 {
+        margin-left: 2em;
+        margin-right: 2em;
+    }
 }
 
 @media(max-width: 400px) {
     .nav__item:not(:last-child) {
         margin-right: var(--gutter-normal);
     }
+    
+
+    
 }
 
 @media(max-width: 300px) {
@@ -581,17 +596,29 @@ body:not(.user-is-tabbing) a:focus {
     z-index: 1; /* Lower z-index */
 }
 
+#top-banner {
+    background: linear-gradient(rgba(0,0,0, .1), rgba(0,0,0, .4)), url('./images/Untitled.gif');
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-size: var(--font-size-normal);
+    z-index: 1; /* Lower z-index */
+}
 
 
 
-.header2 {
+
+
+
+/*.header2 {
     background: linear-gradient(rgba(0,0,0, .1), rgba(0,0,0, .4));
     height: 30vh;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
     font-size: var(--font-size-normal);
-}
+}*/
 
 
 
@@ -740,15 +767,17 @@ body:not(.user-is-tabbing) a:focus {
     .work__text h3 {
         text-align: center;
         justify-content: center;
-        font-family: "RozhaOne-Regular";
     }
+
+
 h3 {
-    font-family: "RozhaOne-Regular";
+    font-family:'Baskerville Old Face';
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-    font-size:3em;
+    font-size: 3em;
 }
+
 h2 {
-    font-family: "RozhaOne-Regular";
+    font-family: KaiseiOpti-Regular;
     font-size: 3.3em;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
     letter-spacing: 0.3em; /* Adjust the value as needed */
@@ -796,6 +825,20 @@ h2 {
         height: auto; /* Maintain aspect ratio */
         margin: 0 10px; /* Adjust spacing between images */
     }
+
+
+@media (max-width: 500px) {
+    .show-gifs {
+        flex-direction: column; /* Stack images vertically */
+
+        margin-bottom: 1px;
+    }
+
+        .show-gifs img {
+            margin: 10px 0; /* Adjust spacing between images for vertical layout */
+        }
+}
+
 
 .work__image-box {
     margin-bottom: var(--gutter-normal);
@@ -845,8 +888,15 @@ h2 {
 
     .carousel {
         flex: 1;
-        margin-left:1em;
+        margin-left:3em;
+        
     }
+
+        .carousel img {
+            height: 50vh;
+        }
+   
+   
 }
 
 /* --------------------------------------- */
@@ -1073,6 +1123,7 @@ h2 {
     font-family: 'RozhaOne-Regular';
 }
 
+
 .black-square {
     background-color: black;
     border-radius: 9px;
@@ -1089,7 +1140,6 @@ h2 {
     padding-bottom: 3em;
 }
 .title {
-    font-family: 'RozhaOne-Regular';
     position: relative;
     font-size:2em;
     left: 1em;
