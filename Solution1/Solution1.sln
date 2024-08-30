@@ -10,6 +10,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		..\index -games.html = ..\index -games.html
 		..\index-3d.html = ..\index-3d.html
 		..\index-about.html = ..\index-about.html
+		..\index-games -aa.html = ..\index-games -aa.html
 		..\index-games.html = ..\index-games.html
 		..\index-UI.html = ..\index-UI.html
 		..\index.css = ..\index.css
