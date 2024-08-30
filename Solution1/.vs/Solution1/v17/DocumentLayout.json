@@ -3,6 +3,9 @@
   "WorkspaceRootPath": "C:\\Users\\chalv\\Documents\\GitHub\\gb\\Solution1\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{00A58095-4827-4FC7-B4DC-B419DFAAEDF6}|Solution Items{00A58095-4827-4FC7-B4DC-B419DFAAEDF6}|C:\\Users\\chalv\\Documents\\GitHub\\gb\\index-3d.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{00A58095-4827-4FC7-B4DC-B419DFAAEDF6}|Solution Items{00A58095-4827-4FC7-B4DC-B419DFAAEDF6}|C:\\Users\\chalv\\Documents\\GitHub\\gb\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
@@ -13,9 +16,6 @@
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\chalv\\Documents\\GitHub\\gb\\index-games -myk.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{00A58095-4827-4FC7-B4DC-B419DFAAEDF6}|Solution Items{00A58095-4827-4FC7-B4DC-B419DFAAEDF6}|C:\\Users\\chalv\\Documents\\GitHub\\gb\\index-3d.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\chalv\\Documents\\GitHub\\gb\\index-contact.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
@@ -34,11 +34,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "index.html",
               "DocumentMoniker": "C:\\Users\\chalv\\Documents\\GitHub\\gb\\index.html",
               "RelativeDocumentMoniker": "..\\index.html",
@@ -51,7 +51,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "index -games - Copy.html",
               "DocumentMoniker": "C:\\Users\\chalv\\Documents\\GitHub\\gb\\index -games - Copy.html",
               "RelativeDocumentMoniker": "..\\index -games - Copy.html",
@@ -59,12 +59,11 @@
               "RelativeToolTip": "..\\index -games - Copy.html",
               "ViewState": "AQIAADAAAAAAAAAAAAAAADcAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2024-07-12T08:37:09.643Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-12T08:37:09.643Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "index-games -myk.html",
               "DocumentMoniker": "C:\\Users\\chalv\\Documents\\GitHub\\gb\\index-games -myk.html",
               "RelativeDocumentMoniker": "..\\index-games -myk.html",
@@ -72,12 +71,11 @@
               "RelativeToolTip": "..\\index-games -myk.html",
               "ViewState": "AQIAACYAAAAAAAAAAAAAAEAAAABJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2024-07-23T10:58:35.663Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-23T10:58:35.663Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "index-games -ire.html",
               "DocumentMoniker": "C:\\Users\\chalv\\Documents\\GitHub\\gb\\index-games -ire.html",
               "RelativeDocumentMoniker": "..\\index-games -ire.html",
@@ -85,18 +83,17 @@
               "RelativeToolTip": "..\\index-games -ire.html",
               "ViewState": "AQIAAB4AAAAAAAAAAAAAAA0AAAA4AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2024-07-22T15:24:37.322Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-22T15:24:37.322Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
               "Title": "index-3d.html",
               "DocumentMoniker": "C:\\Users\\chalv\\Documents\\GitHub\\gb\\index-3d.html",
               "RelativeDocumentMoniker": "..\\index-3d.html",
               "ToolTip": "C:\\Users\\chalv\\Documents\\GitHub\\gb\\index-3d.html",
               "RelativeToolTip": "..\\index-3d.html",
-              "ViewState": "AQIAADwAAAAAAAAAAAAAAEUAAABIAAAA",
+              "ViewState": "AQIAAFYBAAAAAAAAAAAAAGkBAAA5AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
               "WhenOpened": "2024-08-25T12:45:56.543Z",
               "EditorCaption": ""
@@ -111,8 +108,7 @@
               "RelativeToolTip": "..\\index-contact.html",
               "ViewState": "AQIAAB4AAAAAAAAAAAAAADgAAABZAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2024-08-30T11:54:30.844Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-30T11:54:30.844Z"
             },
             {
               "$type": "Document",
@@ -124,8 +120,7 @@
               "RelativeToolTip": "..\\index.css",
               "ViewState": "AQIAAIgAAAAAAAAAAAAEwJwAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-07-12T08:52:12.825Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-12T08:52:12.825Z"
             },
             {
               "$type": "Document",
