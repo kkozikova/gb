@@ -156,6 +156,23 @@ body {
 }
 
 
+.banner-goat {
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.4)), url('./images/Frame 1(3).png');
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-size: var(--font-size-normal);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white; /* Assuming white text for better visibility on dark background */
+
+    width: 100%; /* Ensure full width */
+}
+
 .banner-other {
     background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.4)), url('./images/background.png');
     height: 100vh;
@@ -495,6 +512,7 @@ body:not(.user-is-tabbing) a:focus {
     font-family: RozhaOne-Regular;
     font-size: 1.2em;
     flex-direction: column; /* Stack items vertically */
+    z-index: 4;
 }
 
 
