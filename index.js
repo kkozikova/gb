@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     const banner = document.getElementById('top-banner');
-    const items = document.querySelectorAll('.nav__item');
+    const items = document.querySelectorAll('.nav__item_g');
 
     items.forEach(item => {
         item.addEventListener('mouseover', function () {
@@ -21,14 +21,14 @@ document.addEventListener('DOMContentLoaded', function () {
             banner.style.background = `linear-gradient(rgba(0,0,0, .1), rgba(0,0,0, .4)), ${bannerImage}`;
             banner.style.backgroundSize = 'cover'; /* Ensure background image covers the entire banner */
             banner.style.backgroundRepeat = 'no-repeat'; /* Prevent tiling of the background image */
-
+            banner.classList.add('hovered');
         });
 
         item.addEventListener('mouseout', function () {
             banner.style.background = "linear-gradient(rgba(0,0,0, .1), rgba(0,0,0, .4)), url('./images/Untitled.gif')";
             banner.style.backgroundSize = 'cover'; /* Ensure background image covers the entire banner */
             banner.style.backgroundRepeat = 'no-repeat'; /* Prevent tiling of the background image */
-
+            banner.classList.remove('hovered');
         });
     });
 
