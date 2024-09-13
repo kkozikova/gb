@@ -15,6 +15,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const banner = document.getElementById('top-banner');
     const items = document.querySelectorAll('.nav__item_g');
 
+
     items.forEach(item => {
         item.addEventListener('mouseover', function () {
             const bannerImage = item.getAttribute('data-banner');
@@ -127,4 +128,32 @@ document.addEventListener('scroll', function() {
         const yPos = -(scrollTop * speed);
         layer.style.transform = `translateY(${yPos}px)`;
     });
+});
+
+// Get all the image elements and the lightbox modal elements
+const images = document.querySelectorAll('.image-item img');
+const lightbox = document.getElementById('lightbox');
+const lightboxImage = document.getElementById('lightbox-image');
+const closeBtn = document.querySelector('.close');
+
+// Add click event to each image in the grid
+images.forEach(image => {
+    image.addEventListener('click', () => {
+        // Set the lightbox image to the clicked image's source
+        lightboxImage.src = image.src;
+        // Display the lightbox
+        lightbox.style.display = 'flex';
+    });
+});
+
+// Close the lightbox when the close button is clicked
+closeBtn.addEventListener('click', () => {
+    lightbox.style.display = 'none'; // Hide the lightbox
+});
+
+// Also close the lightbox if the user clicks anywhere outside the image
+lightbox.addEventListener('click', (e) => {
+    if (e.target !== lightboxImage) {
+        lightbox.style.display = 'none';
+    }
 });

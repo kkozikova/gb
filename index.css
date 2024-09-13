@@ -1250,3 +1250,98 @@ hr {
         opacity: 1;
     }
 
+/* Container for the image gallery */
+.gallery-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Grid for images */
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-gap: 15px;
+}
+
+/* Individual image styling */
+.image-item {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+    .image-item img {
+        width: 100%;
+        height: auto;
+        display: block;
+        transition: transform 0.3s ease;
+    }
+
+    /* Hover effect to slightly zoom the images */
+    .image-item:hover img {
+        transform: scale(1.05);
+    }
+
+/* Lightbox styling */
+.lightbox {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+    padding: 20px; /* Padding to ensure space on smaller screens */
+}
+
+    /* Larger image inside the lightbox */
+    .lightbox img {
+        max-width: 118%; /* Increased from 90% to make it 20% larger */
+        max-height: 106%; /* Increased from 80% to make it 20% larger */
+        margin: auto;
+    }
+
+/* Close button styling */
+.close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    z-index: 1000; /* Ensure it is always visible above other content */
+}
+
+/* Responsive design for smaller screens */
+@media screen and (max-width: 768px) {
+    /* Make the image grid fit smaller screens */
+    .image-grid {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        grid-gap: 10px;
+    }
+
+    /* Adjust close button size */
+    .close {
+        font-size: 24px; /* Smaller on mobile */
+    }
+
+    /* Lightbox image on mobile */
+    .lightbox img {
+        max-width: 90%; /* Slightly smaller for mobile screens */
+        max-height: 85%; /* Ensure it doesn't overflow */
+    }
+
+    /* Ensure the lightbox is properly centered on small screens */
+    .lightbox {
+        align-items: center;
+    }
+}
+
+/* Hide class for the lightbox */
+.hidden {
+    display: none;
+}
