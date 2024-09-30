@@ -616,6 +616,7 @@ body:not(.user-is-tabbing) a:focus {
     background-attachment: fixed;
     font-size: var(--font-size-normal);
     z-index: 1; /* Lower z-index */
+  
 }
 
 
@@ -629,6 +630,7 @@ body:not(.user-is-tabbing) a:focus {
     background-attachment: fixed;
     font-size: var(--font-size-normal);
     z-index: 1; /* Lower z-index */
+
 }
 
 
