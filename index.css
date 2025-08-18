@@ -492,12 +492,13 @@ body:not(.user-is-tabbing) a:focus {
     display: flex;
     justify-content: flex-end;
     padding: var(--gutter-normal) 0;
+    z-index: 2;
 }
 
 .nav__items {
     display: flex;
     list-style: none;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
+    background: color(srgb 0 0 0);
     border-radius: 9px;
     padding-left: 1em;
     padding-right: 1em;
@@ -507,7 +508,7 @@ body:not(.user-is-tabbing) a:focus {
     display: flex;
     font-family: "RozhaOne-Regular";
     list-style: none;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
+    background: color(srgb 0 0 0);
     border-radius: 9px;
     padding-left: 1em;
     padding-right: 1em;
@@ -516,7 +517,7 @@ body:not(.user-is-tabbing) a:focus {
     font-family: RozhaOne-Regular;
     font-size: 1.2em;
     flex-direction: column; /* Stack items vertically */
-    z-index: 4;
+    z-index: 6;
 }
 
 
@@ -609,7 +610,7 @@ body:not(.user-is-tabbing) a:focus {
 /* --------------------------------------- */
 
 .header {
-    background: linear-gradient(rgba(0,0,0, .1), rgba(0,0,0, .4)), url('./images/Untitled.gif');
+    background: linear-gradient(rgba(0,0,0, .1), rgba(0,0,0, .4)), url('./images/Untitled.png');
     height: 100vh;
     background-size: cover;
     transition: opacity 0.5s ease-in-out;
@@ -623,7 +624,7 @@ body:not(.user-is-tabbing) a:focus {
 
 
 #top-banner {
-    background: linear-gradient(rgba(0,0,0, .1), rgba(0,0,0, .4)), url('./images/Untitled.gif');
+    background: linear-gradient(rgba(0,0,0, .1), rgba(0,0,0, .4)), url('./images/Untitled.png');
     height: 100vh;
     background-size: cover;
     transition: opacity 0.5s ease-in-out;
@@ -1163,8 +1164,9 @@ h2 {
 }
 
 .black-square {
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
+    background: color(srgb 0 0 0);;
     border-radius: 9px;
+    z-index: -1;
 }
 
 .black-square_text {

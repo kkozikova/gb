@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', function () {
         });
 
         item.addEventListener('mouseout', function () {
-            banner.style.background = "linear-gradient(rgba(0,0,0, .1), rgba(0,0,0, .4)), url('./images/Untitled.gif')";
+            banner.style.background = "linear-gradient(rgba(0,0,0, .1), rgba(0,0,0, .4)), url('./images/Untitled.png')";
             banner.style.backgroundSize = 'cover'; /* Ensure background image covers the entire banner */
             banner.style.backgroundRepeat = 'no-repeat'; /* Prevent tiling of the background image */
             banner.classList.remove('hovered');
