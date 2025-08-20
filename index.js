@@ -35,6 +35,32 @@ document.addEventListener('DOMContentLoaded', function () {
 
 });
 
+// Select elements
+const menuToggle = document.querySelector('.menu-toggle');
+const mobileMenu = document.querySelector('.mobile-menu');
+const overlay = document.querySelector('.menu-overlay');
+
+// Toggle menu open/close
+menuToggle.addEventListener('click', () => {
+  mobileMenu.classList.toggle('active');
+  overlay.classList.toggle('active');
+});
+
+// Close menu when clicking overlay
+overlay.addEventListener('click', () => {
+  mobileMenu.classList.remove('active');
+  overlay.classList.remove('active');
+});
+
+// Optional: close menu when a link is clicked
+document.querySelectorAll('.mobile-menu a').forEach(link => {
+  link.addEventListener('click', () => {
+    mobileMenu.classList.remove('active');
+    overlay.classList.remove('active');
+  });
+});
+
+
 const handleFirstTab = (e) => {
   if(e.key === 'Tab') {
     document.body.classList.add('user-is-tabbing')
