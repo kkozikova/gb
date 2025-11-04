@@ -513,6 +513,7 @@ body:not(.user-is-tabbing) a:focus {
 .nav__items-games {
     display: flex;
     font-family: "RozhaOne-Regular";
+    color:lightsalmon;
     list-style: none;
     background: color(srgb 0 0 0);
     border-radius: 9px;
@@ -538,7 +539,7 @@ body:not(.user-is-tabbing) a:focus {
     }
 
     .nav__items-games {
-        margin-top: 13em;
+        margin-top: 3em;
         z-index: 8
     }
 
@@ -733,11 +734,7 @@ body:not(.user-is-tabbing) a:focus {
         width:70%;
     transform: translateY(20%);
     }
-    .header__text p {
-      
-        visibility:hidden;
-    
-    }
+   
 }
 
 /* --------------------------------------- */
@@ -1187,11 +1184,7 @@ h2 {
     border-radius: 9px;
     z-index: -1;
 }
-.black-square2 {
-    background: transparent;;
-    border-radius: 9px;
-    z-index: -1;
-}
+
 .black-square_text {
     position: relative;
     left: 2.5em;
@@ -1251,7 +1244,8 @@ hr {
     
     .black-square {
         margin-top:-1.7em;
-        width:68%;
+        width:18%;
+         width:18%;
     }
     .title {
         width: 50%;
@@ -1431,6 +1425,7 @@ hr {
 
   .mobile-menu.active {
     transform: translateY(0); /* slide down */
+    font
   }
 
   .mobile-menu ul {
@@ -1469,5 +1464,213 @@ hr {
   .menu-overlay.active {
     opacity: 1;
     pointer-events: auto;
+  }
+}
+
+/* Mobile / small-screen improvements (overrides) */
+@media (max-width: 768px) {
+  /* Make banners adapt rather than forcing full-viewport height */
+  .header,
+  #top-banner,
+  .header2,
+  .banner-dark,
+  .banner-trees,
+  .banner-ire,
+  .banner-goat,
+  .banner-other {
+    background-attachment: scroll !important;
+    height: auto !important;
+    min-height: 55vh;
+    padding: 6rem 1.5rem;
+    background-position: center;
+  }
+
+  /* Simplify header text layout so it flows naturally on mobile */
+  .header__text {
+    position: relative !important;
+    top: auto !important;
+    transform: none !important;
+    padding: 1rem 0 2rem;
+    z-index: 5;
+  }
+
+  /* Hide decorative blobs that overlap content on small screens */
+  .blob {
+    display: none !important;
+  }
+
+  /* Make black square readable and centred */
+  .black-square {
+    width: 92% !important;
+    margin: 0 auto 1.2rem;
+    left: 0 !important;
+    transform: none !important;
+    position: relative !important;
+    background: rgba(0,0,0,0.6);
+    padding: 1.2rem;
+    border-radius: 8px;
+    z-index: 6;
+  }
+
+  .black-square_text {
+    left: 0 !important;
+    top: 0 !important;
+    transform: none !important;
+    margin: 0;
+    padding: 0.4rem 0;
+    width: 100% !important;
+    font-size: 1.6rem;
+    line-height: 1.4;
+  }
+
+  .title {
+    left: 0 !important;
+    top: 0 !important;
+    transform: none !important;
+    text-align: center;
+    display: block;
+    font-size: 2.2rem !important;
+    margin-bottom: 0.6rem;
+  }
+
+  /* Navigation: show compact top-right hamburger and improved mobile menu spacing */
+  .nav__items { display: none !important; } /* desktop nav hidden */
+  .menu-toggle {
+    display: block !important;
+    font-size: 2.6rem !important;
+    top: 1rem !important;
+    right: 1rem !important;
+    padding: 0.3rem 0.5rem;
+  }
+
+  .mobile-menu {
+    align-items: center;
+    padding-top: 2.5rem;
+  }
+
+  .mobile-menu ul {
+    width: 100%;
+  }
+
+  .mobile-menu li {
+    margin: 1.2rem 0 !important; /* comfortable tap targets */
+  }
+
+  .mobile-menu a {
+    font-size: 1.9rem !important;
+    display: block;
+    padding: 0.6rem 0;
+  }
+
+  .menu-overlay {
+    display: block !important;
+  }
+
+  /* Reduce section padding so users don't have to scroll excessively */
+  section {
+    padding: 3.5rem 1.5rem !important;
+  }
+
+  /* Gallery: fewer columns, bigger tappable images */
+  .image-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+    grid-gap: 10px !important;
+  }
+
+  @media (max-width: 420px) {
+    .image-grid {
+      grid-template-columns: 1fr !important;
+    }
+  }
+
+  .image-item img {
+    border-radius: 6px;
+    height: auto;
+    max-height: 45vh;
+    object-fit: contain;
+  }
+
+  /* Ensure carousel images don't overflow */
+  .carousel {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin-left: 0 !important;
+  }
+
+  .carousel img {
+    width: 100% !important;
+    height: auto !important;
+    max-height: 50vh !important;
+    object-fit: contain;
+  }
+
+  /* Lightbox: adapt to smaller screens and center properly */
+  .lightbox {
+    padding: 10px !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+  .lightbox img {
+    max-width: 95% !important;
+    max-height: 85% !important;
+  }
+  .close {
+    top: 16px !important;
+    right: 16px !important;
+    font-size: 26px !important;
+  }
+
+  /* Back to top: smaller spacing on mobile */
+  .back-to-top {
+    bottom: 2rem !important;
+    right: 1.2rem !important;
+    height: 4.2rem !important;
+    width: 4.2rem !important;
+  }
+
+  /* Compact show-gifs stack vertically */
+  .show-gifs {
+    flex-direction: column !important;
+    gap: 0.6rem;
+  }
+
+  .show-gifs img {
+    max-width: 90% !important;
+    margin: 0.4rem 0 !important;
+  }
+
+  /* Make about__content stack cleanly */
+  .about__content {
+    flex-direction: column !important;
+    align-items: stretch !important;
+  }
+
+  .about__photo-container,
+  .about__text {
+    width: 100% !important;
+    margin: 0 !important;
+  }
+
+  .about__photo-container iframe,
+  .about__photo-container img {
+    width: 100% !important;
+    height: auto !important;
+    max-height: 48vh !important;
+  }
+
+  /* Reset any rotated/translated text used for desktop */
+  #hello,
+  .headerr__text,
+  .black-square_text,
+  .title {
+    transform: none !important;
+    rotate: 0deg !important;
+  }
+
+  /* Tweak fonts to be readable */
+  :root {
+    --font-size-small: 1.6rem;
+    --font-size-normal: 2.0rem;
+    --font-size-medium: 2.4rem;
   }
 }
