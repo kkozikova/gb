@@ -3,13 +3,13 @@
   "WorkspaceRootPath": "C:\\Users\\chalv\\Documents\\GitHub\\gb\\Solution1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{00A58095-4827-4FC7-B4DC-B419DFAAEDF6}|Solution Items{00A58095-4827-4FC7-B4DC-B419DFAAEDF6}|C:\\Users\\chalv\\Documents\\GitHub\\gb\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\chalv\\Documents\\GitHub\\gb\\index-uiux.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{00A58095-4827-4FC7-B4DC-B419DFAAEDF6}|Solution Items{00A58095-4827-4FC7-B4DC-B419DFAAEDF6}|C:\\Users\\chalv\\Documents\\GitHub\\gb\\index -gd.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00A58095-4827-4FC7-B4DC-B419DFAAEDF6}|Solution Items{00A58095-4827-4FC7-B4DC-B419DFAAEDF6}|C:\\Users\\chalv\\Documents\\GitHub\\gb\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{00A58095-4827-4FC7-B4DC-B419DFAAEDF6}|Solution Items{00A58095-4827-4FC7-B4DC-B419DFAAEDF6}|C:\\Users\\chalv\\Documents\\GitHub\\gb\\index-3d.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
@@ -43,41 +43,43 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "index-uiux.html",
               "DocumentMoniker": "C:\\Users\\chalv\\Documents\\GitHub\\gb\\index-uiux.html",
               "RelativeDocumentMoniker": "..\\index-uiux.html",
               "ToolTip": "C:\\Users\\chalv\\Documents\\GitHub\\gb\\index-uiux.html",
               "RelativeToolTip": "..\\index-uiux.html",
-              "ViewState": "AQIAAIgAAAAAAAAAAAAAAJEAAAAAAAAA",
+              "ViewState": "AQIAAEgAAAAAAAAAAAAAAFAAAAASAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2025-11-04T12:02:58.813Z"
+              "WhenOpened": "2025-11-04T12:02:58.813Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "index -gd.html",
               "DocumentMoniker": "C:\\Users\\chalv\\Documents\\GitHub\\gb\\index -gd.html",
               "RelativeDocumentMoniker": "..\\index -gd.html",
               "ToolTip": "C:\\Users\\chalv\\Documents\\GitHub\\gb\\index -gd.html",
               "RelativeToolTip": "..\\index -gd.html",
-              "ViewState": "AQIAAHIAAAAAAAAAAAAAAJcAAABeAAAA",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAJcAAABeAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2024-09-09T15:07:29.07Z"
+              "WhenOpened": "2024-09-09T15:07:29.07Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "index.html",
               "DocumentMoniker": "C:\\Users\\chalv\\Documents\\GitHub\\gb\\index.html",
               "RelativeDocumentMoniker": "..\\index.html",
               "ToolTip": "C:\\Users\\chalv\\Documents\\GitHub\\gb\\index.html",
               "RelativeToolTip": "..\\index.html",
-              "ViewState": "AQIAAHoAAAAAAAAAAAAAAKgAAAAaAAAA",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABcAAAAZAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
               "WhenOpened": "2024-07-22T14:01:51.647Z",
               "EditorCaption": ""
