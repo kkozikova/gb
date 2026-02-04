@@ -302,6 +302,8 @@ h3 {
 }
 
 @media(max-width: 500px) {
+    .medzera { visibility: hidden
+    }
     .heading-primary {
         font-size: var(--font-size-large);
     }
@@ -1643,7 +1645,7 @@ hr {
     flex-direction: column !important;
     align-items: stretch !important;
   }
-
+    
   .about__photo-container,
   .about__text {
     width: 100% !important;
