@@ -33,32 +33,46 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 
-});
 
-// Select elements
-const menuToggle = document.querySelector('.menu-toggle');
-const mobileMenu = document.querySelector('.mobile-menu');
-const overlay = document.querySelector('.menu-overlay');
 
-// Toggle menu open/close
-menuToggle.addEventListener('click', () => {
-  mobileMenu.classList.toggle('active');
-  overlay.classList.toggle('active');
-});
+    // Select elements
+    const menuToggle = document.querySelector('.menu-toggle');
+    const mobileMenu = document.querySelector('.mobile-menu');
+    const overlay = document.querySelector('.menu-overlay');
 
-// Close menu when clicking overlay
-overlay.addEventListener('click', () => {
-  mobileMenu.classList.remove('active');
-  overlay.classList.remove('active');
-});
+    if (menuToggle && mobileMenu && overlay) {
 
-// Optional: close menu when a link is clicked
-document.querySelectorAll('.mobile-menu a').forEach(link => {
-  link.addEventListener('click', () => {
-    mobileMenu.classList.remove('active');
-    overlay.classList.remove('active');
-  });
-});
+        // Toggle menu open/close
+        menuToggle.addEventListener('click', () => {
+            const isActive = mobileMenu.classList.toggle('active');
+            overlay.classList.toggle('active', isActive); // ensure overlay matches menu state
+
+            if (isActive) {
+                // ---------------------------
+                // Only attach these listeners when menu opens
+                // ---------------------------
+
+                // Close menu when overlay is clicked
+                const closeOverlay = () => {
+                    mobileMenu.classList.remove('active');
+                    overlay.classList.remove('active');
+                    overlay.removeEventListener('click', closeOverlay); // remove after use
+                };
+                overlay.addEventListener('click', closeOverlay);
+
+                // Close menu when a link inside menu is clicked
+                mobileMenu.querySelectorAll('a').forEach(link => {
+                    const closeMenuLink = () => {
+                        mobileMenu.classList.remove('active');
+                        overlay.classList.remove('active');
+                        link.removeEventListener('click', closeMenuLink); // remove after use
+                    };
+                    link.addEventListener('click', closeMenuLink);
+                });
+            }
+        });
+
+    }
 
 
 const handleFirstTab = (e) => {
@@ -182,4 +196,5 @@ lightbox.addEventListener('click', (e) => {
     if (e.target !== lightboxImage) {
         lightbox.style.display = 'none';
     }
+});
 });
