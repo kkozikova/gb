@@ -53,10 +53,9 @@
               "RelativeDocumentMoniker": "..\\index -vid.html",
               "ToolTip": "C:\\Users\\chalv\\Documents\\GitHub\\gb\\index -vid.html",
               "RelativeToolTip": "..\\index -vid.html",
-              "ViewState": "AgIAAHsAAAAAAAAAAADwv6AAAAASAAAAAAAAAA==",
+              "ViewState": "AQIAACcAAAAAAAAAAAAAADUAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
               "WhenOpened": "2026-04-29T09:36:16.516Z",
-              "IsPinned": true,
               "EditorCaption": ""
             },
             {
@@ -93,7 +92,8 @@
               "RelativeToolTip": "..\\index -gd.html",
               "ViewState": "AQIAAP0AAAAAAAAAAAAAACoBAAArAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2024-09-09T15:07:29.07Z"
+              "WhenOpened": "2024-09-09T15:07:29.07Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -178,10 +178,6 @@
               "ViewState": "AQIAACsBAAAAAAAAAAAAADABAAAhAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
               "WhenOpened": "2024-07-12T08:52:12.825Z"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
             }
           ]
         }
