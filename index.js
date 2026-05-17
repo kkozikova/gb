@@ -170,31 +170,30 @@ document.addEventListener('scroll', function() {
     });
 });
 
-// Get all the image elements and the lightbox modal elements
-const images = document.querySelectorAll('.image-item img');
-const lightbox = document.getElementById('lightbox');
-const lightboxImage = document.getElementById('lightbox-image');
-const closeBtn = document.querySelector('.close');
+    // Get elements
+    const images = document.querySelectorAll('.image-item img');
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImage = document.getElementById('lightbox-image');
+    const closeBtn = document.querySelector('.close');
 
-// Add click event to each image in the grid
-images.forEach(image => {
-    image.addEventListener('click', () => {
-        // Set the lightbox image to the clicked image's source
-        lightboxImage.src = image.src;
-        // Display the lightbox
-        lightbox.style.display = 'flex';
-    });
-});
+    // Only run if ALL required elements exist
+    if (images.length && lightbox && lightboxImage && closeBtn) {
 
-// Close the lightbox when the close button is clicked
-closeBtn.addEventListener('click', () => {
-    lightbox.style.display = 'none'; // Hide the lightbox
-});
+        images.forEach(image => {
+            image.addEventListener('click', () => {
+                lightboxImage.src = image.src;
+                lightbox.style.display = 'flex';
+            });
+        });
 
-// Also close the lightbox if the user clicks anywhere outside the image
-lightbox.addEventListener('click', (e) => {
-    if (e.target !== lightboxImage) {
-        lightbox.style.display = 'none';
+        closeBtn.addEventListener('click', () => {
+            lightbox.style.display = 'none';
+        });
+
+        lightbox.addEventListener('click', (e) => {
+            if (e.target !== lightboxImage) {
+                lightbox.style.display = 'none';
+            }
+        });
     }
-});
 });
